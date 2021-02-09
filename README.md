@@ -1,24 +1,59 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is summary for coding-on-rails test. This submission is [INCOMPLETE](#not-yet-done-list).
 
-Things you may want to cover:
+## Version
+Version of software being used during development:
+- ruby 2.7.2
+- Rails 5.2.4.4
+- Ubuntu 18.04.5 LTS
 
-* Ruby version
+## Need to be listed
+- [Postman Documentation](https://documenter.getpostman.com/view/8400891/TW76E5Uo#43ebe50c-6b03-4341-a1cc-179d4974c7c1)
+- Additional gem:
+    - jwt: for authentication & authorization
+    - active_model_serializers: to convert attributes from snake_case to camelCase 
+    - rspec-rails: for unit test
+    - shoulda-matchers: support unit test implementation
+- References:
+    - [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
+    - [How To Install Ruby on Rails with rbenv on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-18-04)
+    - [Build a RESTful JSON API With Rails 5](https://www.digitalocean.com/community/tutorials/build-a-restful-json-api-with-rails-5-part-one)
+    - [Authentication and Authorization](https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-two)
+    - [Creating a REST API with Rails](https://medium.com/@oliver.seq/creating-a-rest-api-with-rails-2a07f548e5dc)
 
-* System dependencies
+## Not Yet Done List
+- using Enumeration for project type
+- unit test for controller
 
-* Configuration
+## How to Get It Run
+This step assumes unix-based machine is ready. Clone [this repository](https://github.com/veryresto/coding-on-rails.git)
+```bash
+$ git clone https://github.com/veryresto/coding-on-rails.git
+```
 
-* Database creation
+Go to downloaded folder
+```bash
+$ cd coding-on-rails
+```
 
-* Database initialization
+Install the gems
+```bash
+$ bundle install
+```
 
-* How to run the test suite
+Run the migrations
+```bash
+$ rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+(Optional) Run the tests
+```bash
+$ bundle exec rspec
+```
 
-* ...
+Run the server. By default it will run on http://localhost:3000
+```bash
+$ rails s
+```

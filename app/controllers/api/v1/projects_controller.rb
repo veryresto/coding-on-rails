@@ -1,4 +1,6 @@
 class Api::V1::ProjectsController < ApplicationController
+    skip_before_action :authorize_request, only: :index
+
     # GET /projects
     def index
         @projects = Project.all
