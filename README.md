@@ -27,6 +27,19 @@ Version of software being used during development:
 - unit test for controller
 
 ## How to Get It Run
+
+### Using Heroku
+- Prerequisites:
+    - [Heroku free account](https://www.heroku.com/). Create an account first then you will be able to just login in the next step.
+- Steps:
+    - Click ****Deploy to Heroku**** button. You will be redirected to Heroku Dashboard. Choose **Log in** button on top right corner.
+    - Fill the **App name**. Make sure it is available.
+    - Scroll down and click **Deploy app**. Config Vars can be left by default.
+    - Wait for a minute and a half. Click **View** and app url will be shown.
+    
+    [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### Using Own Server
 This step assumes unix-based machine is ready. Clone [this repository](https://github.com/veryresto/coding-on-rails.git)
 ```bash
 $ git clone https://github.com/veryresto/coding-on-rails.git
